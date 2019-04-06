@@ -12,7 +12,7 @@
 `$data = $ezsqli -> query("SELECT * FROM items") -> all;`
 
 ```
-/* Output Examples
+/* Output
 
   $data = [
       0 => ["id" => 1, "name" => ball, "color" => "red"],
@@ -27,7 +27,7 @@
 `$data = $ezsqli -> query("SELECT * FROM items WHERE id='1' LIMIT 1") -> row;`
 
 ```
-/* Output Examples
+/* Output
 
   $data = ["id" => 1, "name" => ball, "color" => "red"];
   
@@ -39,7 +39,7 @@
 `$data = $ezsqli -> query("SELECT name FROM items WHERE id='1' LIMIT 1") -> str;`
 
 ```
-/* Output Examples
+/* Output
 
   $data = "ball";
   
